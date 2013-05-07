@@ -19,34 +19,34 @@
 
 			<header class="navbar navbar-inverse navbar-fixed-top">
 				<nav class="navbar-inner">
-					<div class="container offset2">
+					<div class="container=fluid offset2">
 						<%= render 'layouts/navigation' %>
 					</div>
 				</nav>
 				<%= feedback_tab(:position => 'right') %>
 			</header>
-
-			<!-- Main container -->
-			<div id="main" role="main">
-				<div class="container" style="margin-top:40px">
-					<div class="content">
-						<div class="row">
-							<div class="span12">
-								<%= render 'layouts/messages' %>
-								<%= yield %>
-							</div>
-							<!-- end span12 -->
-						</div>
-						<!-- end row -->
-					</div>
-					<!-- end content -->
-				</div>
-				<!-- end of container -->
-				<div id="push"></div>
-			</div>
-			<!-- end main -->
 		</div>
-		<!-- end wrap -->
+		<!-- end nav-wrapper -->
+		
+		<!-- Main container -->
+		<div id="main" role="main">
+			<div class="container" style="margin-top:40px">
+				<div class="content">
+					<div class="row">
+						<div class="span12">
+							<%= render 'layouts/messages' %>
+							<%= yield %>
+						</div>
+						<!-- end span12 -->
+					</div>
+					<!-- end row -->
+				</div>
+				<!-- end content -->
+			</div>
+			<!-- end of container -->
+			<div id="push"></div>
+		</div>
+		<!-- end main -->
 
 		<%= yield :scripts %>
 	</body>
